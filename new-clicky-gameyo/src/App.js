@@ -51,7 +51,7 @@ class App extends Component {
 
       <Wrapper>
             <Jumbotron />
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header score={this.state.score} highscore={this.state.highscore}></Header>
         {this.state.cards.map(card => (
           <Card
             clickCount={this.clickCount}
