@@ -25,7 +25,8 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-       
+        <Header />
+
       </Wrapper>
     );
   }
