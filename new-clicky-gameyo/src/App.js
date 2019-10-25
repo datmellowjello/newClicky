@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import cards from "./cards.json";
 import logo from './logo.svg';
 import './App.css';
+import Jumbotron from './components/Jumbotron';
 
 class App extends Component {
   // Setting this.state.cards to the cards json array
@@ -47,7 +48,9 @@ class App extends Component {
   // Map over this.state.cards and render a cardCard component for each card object
   render() {
     return (
+
       <Wrapper>
+            <Jumbotron />
         <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
         {this.state.cards.map(card => (
           <Card
